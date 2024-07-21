@@ -108,17 +108,21 @@ const EachMove = ({ customerData, key }) => {
         </div>
       </div>
       <div className="flex">
-        <p className="mt-2 ">
-          <TbAlertTriangleFilled className="text-orange-600 size-6" />
+        <p className="mt-3 ">
+          <TbAlertTriangleFilled className="text-orange-600 size-4" />
         </p>
         <h1 className="p-2">
-          <span className="font-bold">Disclaimer:</span> Please update our move
-          date before two days of shifting
+          <span className="font-bold text-sm">Disclaimer:</span> Please update
+          our move date before two days of shifting
         </h1>
       </div>
-      {showData && getEstId === customerData.estimate_id ? <Item /> : ""}
+      {showData && getEstId === customerData.estimate_id ? (
+        <Item items={customerData.items} alldata={customerData} />
+      ) : (
+        ""
+      )}
 
-      <hr />
+      <hr className="text-6xl" />
     </div>
   );
 };
