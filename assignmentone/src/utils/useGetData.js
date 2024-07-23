@@ -12,7 +12,7 @@ const useGetData = () => {
 
   useEffect(() => {
     getData();
-  });
+  }, []);
 };
 
 export default useGetData;
