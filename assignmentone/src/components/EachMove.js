@@ -39,9 +39,6 @@ const EachMove = ({ customerData, key }) => {
               customerData.from_address?.fromState}
           </p>
         </div>
-        {/* <div className="border border-slate-800 rounded-full w-10 h-10 p-2 m-2 shadow-lg mt-5">
-          <h1>{"->"}</h1>
-        </div> */}
         <div className=" mt-8 ">
           <h1>
             <BsFillArrowRightCircleFill className="text-orange-600 size-6" />
